@@ -1,0 +1,6 @@
+{
+  "name": "COMEBACK - Arena Action Survival Game",
+  "description": "A high-octane 60fps arena survival game featuring the dynamic Comeback Surge mechanic where nearing defeat turns you into an unstoppable juggernaut.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

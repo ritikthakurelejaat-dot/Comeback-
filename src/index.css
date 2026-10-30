@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: #030712;
+  color: #f8fafc;
+  font-family: 'Outfit', sans-serif;
+}
+
+canvas {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  outline: none;
+}
+
+/* Subtle cinematic vignette */
+.cinematic-vignette {
+  background: radial-gradient(circle at 50% 50%, transparent 65%, rgba(0, 0, 0, 0.75) 100%);
+  pointer-events: none;
+}
+
+/* Comeback surge flash */
+@keyframes surgePulse {
+  0% { box-shadow: inset 0 0 100px rgba(239, 68, 68, 0.6), 0 0 40px rgba(245, 158, 11, 0.4); }
+  50% { box-shadow: inset 0 0 160px rgba(245, 158, 11, 0.9), 0 0 80px rgba(239, 68, 68, 0.7); }
+  100% { box-shadow: inset 0 0 100px rgba(239, 68, 68, 0.6), 0 0 40px rgba(245, 158, 11, 0.4); }
+}
+
+.surge-active-border {
+  animation: surgePulse 1.2s infinite ease-in-out;
+}

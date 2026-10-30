@@ -1,0 +1,21 @@
+{
+  "id": "/",
+  "name": "COMEBACK - Arena Action Game",
+  "short_name": "COMEBACK",
+  "description": "A high-octane 60fps arena survival game featuring the dynamic Comeback Surge mechanic.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#030712",
+  "theme_color": "#030712",
+  "categories": ["games", "arcade", "action"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
